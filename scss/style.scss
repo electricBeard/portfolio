@@ -31,13 +31,14 @@ a {
 }
 
 p {
-    max-width: 40rem;
+    max-width: 38rem;
 }
+
 
 .showcase{
     @include set-background($primary-color);
     // max-height: 600px;
-    margin-bottom: 12rem;;
+    margin-bottom: 12rem;
 
     nav{
         display: flex;

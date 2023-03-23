@@ -13,5 +13,19 @@
         }
     }
 
-}
+    .btn-stack{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
+    .btn-primary, .btn-secondary, .btn-tertiary{
+        width: 100%;
+    }
+
+
+
+
+
+}
