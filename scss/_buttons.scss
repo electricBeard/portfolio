@@ -16,10 +16,22 @@
 
 .btn-primary{
     @extend %btn;
-    @include set-background(lighten($primary-color, 10%));
+    @include set-background($secondary-color);
 }
 
 .btn-secondary{
     @extend %btn;
-    @include set-background($secondary-color);
+    @include set-background(lighten($secondary-color, 12%));
+}
+
+.btn-tertiary{
+    @extend %btn;
+    @include set-background(lighten($secondary-color, 25%));
+}
+
+.btn-stack{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
 }
