@@ -18,7 +18,8 @@ body{
 }
 
 img{
-    width: 100%;
+    height: 30rem;
+    object-fit: contain;
 }
 
 a{
@@ -27,7 +28,7 @@ a{
 
 .showcase{
     @include set-background($primary-color);
-    height: 600px;
+    max-height: 600px;
 
     nav{
         display: flex;
