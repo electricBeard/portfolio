@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: $light-color;
+    background-color: $primary-color;
     font-family: $font-stack;
     line-height: 1.6;
 }
@@ -45,6 +45,7 @@ a{
 
         a {
             color: set-text-color($primary-color);
+            transition: color 0.25s;
         }
 
         a:hover{
@@ -52,6 +53,9 @@ a{
         }
     }
 
+    .hero{
+        padding-right: 1.5rem;
+    }
 
     &-content{
         height: 100%;
@@ -68,11 +72,9 @@ a{
             font-size: 50px;
             line-height: 1.2;
         }
-
-        
-
     }
 }
+
 
 @import 'utility';
 @import 'buttons';

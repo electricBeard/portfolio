@@ -6,8 +6,10 @@
     padding: 8px 20px;
     margin: 3px;
 
+    transition: transform 0.5s;
+
     &:hover{
-        transform: scale(0.98);
+        transform: scale(0.95);
     }
 }
 
