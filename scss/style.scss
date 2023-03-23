@@ -18,12 +18,18 @@ body{
 }
 
 img{
+    border-radius: 1rem;
     height: 30rem;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+p {
+    max-width: 40rem;
 }
 
 .showcase{
