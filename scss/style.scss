@@ -37,6 +37,9 @@ p {
 }
 
 
+
+
+
 .showcase{
     @include set-background($primary-color);
 
@@ -87,6 +90,17 @@ p {
     list-style: none;
     justify-content: space-around;
     align-items: center;
+}
+
+.sticky-header{
+    background-color: purple;
+    color: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
 
 @import 'utility';

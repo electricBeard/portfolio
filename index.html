@@ -8,6 +8,7 @@
     - Earth tone color palette by Vecteezy, retrieved 22 March 2023 at https://www.vecteezy.com/vector-art/8903059-earth-tone-colour-schemes-ideas-color-palettes-are-trends-combinations-and-palette-guides-this-year-a-table-color-shades-in-rgb-or-hex-a-color-swatch-for-a-spring-fashion-home-or-interior-design
     - Poppins & Open Sans fonts from Google Fonts.
     - Biography and process analysis based off of previous portfolio from IAT309W Reasearch Methods for Design at SFU (pdf in root folder)
+    - Scroll watching JS from css-tricks.com, retrieved 24 March 2023 from: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
 
 -->
 
@@ -28,7 +29,7 @@
     <header class="showcase">
 
         <!-- Main container class -->
-        <div class="container">
+        <div class="container header">
             <nav>
                 <h1 class="logo">
                     <a href="index.html">GW | UX & PM</a></h1>
@@ -55,6 +56,10 @@
                 </div>
 
                 <img src="img/GW_self_portrait.jpg">
+
+                <!-- Tracker div for page scroll -->
+                <div id="pixel-to-watch"></div>
+
             </div>
         </div>
     </header>
