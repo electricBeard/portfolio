@@ -18,7 +18,6 @@ body{
     font-family: $font-stack;
     line-height: 1.6;
     color: set-text-color($primary-color);
-
 }
 
 img{
@@ -92,7 +91,7 @@ p {
     align-items: center;
 }
 
-.sticky-header{
+#sticky-header{
     background-color: purple;
     color: white;
 
@@ -100,6 +99,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
+
 
 }
 
