@@ -2,7 +2,6 @@
 
 //is compiled and minified to regular css
 
-//testing out a new save here
 
 @import 'config';
 
@@ -34,10 +33,6 @@ a {
 p {
     max-width: 38rem;
 }
-
-
-
-
 
 .showcase{
     @include set-background($primary-color);
@@ -92,15 +87,30 @@ p {
 }
 
 #sticky-header{
-    background-color: purple;
-    color: white;
-
+    @extend container;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
 
+    transition: display 0.5s;
 
+    @include set-background($primary-color);
+
+    nav{
+        @include set-link-properties();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        li{
+            padding: 15px;
+        }
+    }
 }
 
 @import 'utility';

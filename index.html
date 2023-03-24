@@ -9,6 +9,8 @@
     - Poppins & Open Sans fonts from Google Fonts.
     - Biography and process analysis based off of previous portfolio from IAT309W Reasearch Methods for Design at SFU (pdf in root folder)
     - Scroll watching JS from css-tricks.com, retrieved 24 March 2023 from: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
+    - Pixel observer, used to track the user's scrolling progress thru the page via: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
+    - Visibility of divs via: https://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript#:~:text=To%20show%2Fhide%2C%20you%20can,which%20have%20slightly%20different%20effects%3A&text=It%20will%20automatically%20use%20the,selector%20such%20as%20%23id%20or%20.
 
 -->
 
@@ -29,7 +31,7 @@
     <header class="showcase">
 
         <!-- Main container class -->
-        <div class="container top">
+        <div class="container">
             <nav>
                 <h1 class="logo">
                     <a href="index.html">GW | UX & PM</a></h1>
@@ -43,16 +45,18 @@
 
         <!-- STICKY HEADER HERE -->
         <div id="sticky-header">
-            <nav>
-                <h1 class="logo">
-                    <a href="index.html">GW | UX & PM</a></h1>
-                <!-- <ul>
-                    <li><a href="info.html">Info</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="styleguide.html">Style Guide</a></li>
-                </ul>
-            </nav> -->
+            <div class="container">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html">GW | UX & PM</a></h1>
+                    <ul>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html">Projects</a></li>
+                        <li><a href="styleguide.html">Style Guide</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
             <!-- Top Intro content -->
