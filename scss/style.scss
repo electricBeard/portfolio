@@ -31,7 +31,7 @@ img{
 a {
     text-decoration: none;
 }
-
+       
 p {
     max-width: 38rem;
 }
@@ -39,10 +39,12 @@ p {
 
 .showcase{
     @include set-background($primary-color);
+
     // max-height: 600px;
     margin-bottom: 12rem;
 
     nav{
+        @include set-link-properties();
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -54,15 +56,6 @@ p {
 
         li{
             padding: 15px;
-        }
-
-        a {
-            color: set-text-color($primary-color);
-            transition: color 0.25s;
-        }
-
-        a:hover{
-            color: $secondary-color;
         }
     }
 
@@ -86,6 +79,14 @@ p {
             line-height: 1.2;
         }
     }
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
 }
 
 @import 'utility';
