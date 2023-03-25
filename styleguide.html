@@ -45,45 +45,118 @@
         </div>
     </header>
 
-    <div class="grid">
-        <div class="container">
-            <h1>Style Guide</h1>
-        </div>
 
-        <div class="container">
+    <div class="container">
+        <h1>Style Guide</h1>
+    </div>
+
+    <!-- Grid 1 Here -->
+    <div class="container guide-grid">
+        <div class="container left">
             <h2>Interactive Elements</h2>
-            <div>
-                in-text link, navigation link, submit/reset buttons, radio buttons & label, text input field and label, image link
-            </div>
+
+                <!-- Links -->
+                <div><a href="#">This</a> is an in-text link</div>
+                <div><a href="#">This</a> is a nav link</div>
+                
+                <!-- Submit/Reset Buttons -->
+                <div>
+                    <button>Submit</button>
+                    <button>Reset</button>
+                </div>
+
+                <!-- Radio Buttons -->
+                <div>
+                    <form class="radio-btn-list" action="#">
+                        <!-- Radio button 1 -->
+                        <div class="radio-group">
+                            <input type="radio" id="radio-1" name="radio_button" value="1">
+                            <label for="radio-1">Radio Button #1</label>
+                        </div>
+                        <!-- Radio button 2 -->
+                        <div class="radio-group">
+                            <input type="radio" id="radio-2" name="radio_button" value="1">
+                            <label for="radio-2">Radio Button #2</label>
+                        </div>
+                        <!-- Radio button 3 -->
+                        <div class="radio-group">
+                            <input type="radio" id="radio-3" name="radio_button" value="1">
+                            <label for="radio-3">Radio Button #3</label>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Text Inputs -->
+                <div>
+                    <form class="text-entry" action="#">
+                        <label for="label">Text entry:</label>
+                        <input type="text" id="user-text-entry" name="field" placeholder="Looks like this">
+                    </form>    
+                </div>
+
+                <!-- Image as a link -->
+                <div>
+                    <a href="#"><img src="img/GW_self_portrait.jpg" class="img-link"></a> image link
+                </div>
         </div>
 
-        <div class="container">
+        <div class="container middle">
             <h2>Text Styling</h2>
-            <div>
-                four heading levels, paragraph, numbered list
-            </div>
+                <div>
+                    <h1>H1 looks like this</h1>
+                    <h2>H2 looks like this</h2>
+                    <h3>H3 looks like this</h3>
+                    <h4>H4 looks like this</h4>
+                </div>
+                <div>
+                    <p>Paragraphs look like this, viverra porttitor neque, et auctor nisi porttitor nec. In aliquam, velit nec iaculis vulputate, lectus nulla varius dui, in sagittis libero dui sed neque.</p> 
+                </div>
+                <div>
+                    <ol>
+                        <li>Ordered lists look like this</li>
+                        <li>This is the second item</li>
+                        <li>This is the third item</li>
+                    </ol>
+                </div>
         </div>
 
-        <div class="container">
+        <div class="container right">
             <h2>Combined Elements</h2>
-            <div>
-                main nav, service listing, payment form, checkout cart
-            </div>
+                <div>
+                    <a href="index.html">This</a> is a nav link
+                </div>
+                <div>service listing</div>
+                <div>payment form</div>
+                <div>checkout cart</div>
         </div>
+    </div>
 
-        <div class="container">
+
+    <!-- Grid 2 Here -->
+    <div class="container guide-grid">
+        <div class="container left">
             <h2>Branding ideas</h2>
-            <div>
-                what do i do? potential customers? why choose me? personas ??
-            </div>
+            <div>what do i do?</div>
+            <div>potential customers/personas?</div>
+
         </div>
 
-        <div class="container">
+        <div class="container middle">
             <h2>Brand Component Examples</h2>
-            <div>
-                fonts, color palette, imagery
-            </div>
+            <div>fonts</div>
+            <div>color palette</div>
+            <div>imagery</div>
         </div>
+
+        <div class="container right">
+            <h2>Extra stuff</h2>
+            <div>why choose me?</div>
+
+
+
+        </div>
+
+        
     </div>
 
 

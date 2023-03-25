@@ -24,7 +24,10 @@
         width: 100%;
     }
 
-
+    .guide-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
 
 

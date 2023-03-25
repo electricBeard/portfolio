@@ -83,6 +83,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
 
     @include set-background($primary-color);
 
@@ -103,12 +104,37 @@ p {
     }
 }
 
-.grid{
-    background-color: yellow;
-    border: 2px solid black;
+.guide-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.5rem;
+    background-color: yellow;   
+   
+    .column{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 1rem 0;
+        padding: 0;
 
+        p{
+            margin: 1rem 0;
+        }
 
+    }
+
+    .left{background-color: lightblue; @extend .column}
+    .middle{background-color: lightcoral; @extend .column}
+    .right{background-color: lightgreen; @extend .column}
 }
+
+
+
+
+
+
+
 
 @import 'utility';
 @import 'buttons';
