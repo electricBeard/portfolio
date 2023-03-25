@@ -83,7 +83,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    box-shadow: 0 0 50px rgba(0,0,0,0.10);
 
     @include set-background($primary-color);
 
@@ -107,28 +107,104 @@ p {
 .guide-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1.5rem;
-    background-color: yellow;   
+    column-gap: 3rem;
    
     .column{
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        margin: 1rem 0;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        margin-bottom: 10rem;;
         padding: 0;
 
         p{
             margin: 1rem 0;
         }
-
+        .container{
+            margin: 0;
+        }
     }
 
-    .left{background-color: lightblue; @extend .column}
-    .middle{background-color: lightcoral; @extend .column}
-    .right{background-color: lightgreen; @extend .column}
+    .left{
+        // background-color: lightblue;
+        @extend .column
+    }
+    .middle{
+        // background-color: lightcoral;
+        @extend .column;
+    }
+    .right{
+        // background-color: lightgreen;
+        @extend .column
+    }
+
+    .example-showcase{
+        @include set-background($primary-color);
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+
+   
+        nav{
+            @include set-link-properties();
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-between;
+
+    
+            ul{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                list-style: none;
+            }
+    
+            li{
+                padding: 0;
+            }
+        }
+    }
 }
 
+
+.font-box{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-self: start;
+}
+
+.example-font-1{font-family: Poppins;}
+.example-font-2{font-family: Open Sans;}
+.example-font-3{font-family: Helvetica;}
+.example-font-4{font-family: Arial;}
+
+.example-colour-0{
+    background-color: grey;
+    border-radius: 8px; 
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+.example-colour-1{background-color: $c-palette1; @extend .example-colour-0;}
+.example-colour-2{background-color: $c-palette2; @extend .example-colour-0;}
+.example-colour-3{background-color: $c-palette3; @extend .example-colour-0;}
+.example-colour-4{background-color: $c-palette4; @extend .example-colour-0;}
+.example-colour-5{background-color: $c-palette5; @extend .example-colour-0;}
+.example-colour-6{background-color: $c-palette6; @extend .example-colour-0;}
+
+.example-list{
+    padding: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left
+
+ 
+}
 
 
 

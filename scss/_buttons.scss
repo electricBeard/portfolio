@@ -5,14 +5,15 @@
     border-radius: 5px;
     padding: 8px 20px;
     margin: 3px;
+    max-width: 500px;
 
     transition: transform 0.5s;
 
     &:hover{
         transform: scale(0.95);
+        cursor: pointer;
     }
 }
-
 
 .btn-primary{
     @extend %btn;
@@ -36,8 +37,9 @@
     align-items: start;
 }
 
-
 // submit and reset buttons here
+
+
 
 // Image links act as buttons
 .img-link{
@@ -51,5 +53,11 @@
     &:hover{
         transform: scale(0.95);
     }
+}
+
+.image-link-box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
