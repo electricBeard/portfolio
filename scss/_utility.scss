@@ -7,7 +7,15 @@
     overflow: auto;
 }
 
-.footer{
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
     text-align: center;
 }
 

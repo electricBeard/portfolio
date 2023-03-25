@@ -78,21 +78,11 @@ p {
     }
 }
 
-.contact-info{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #sticky-header{
-    @extend container;
     position: fixed;
     top: 0;
     left: 0;
-
-    transition: display 0.5s;
+    width: 100%;
 
     @include set-background($primary-color);
 
@@ -111,6 +101,13 @@ p {
             padding: 15px;
         }
     }
+}
+
+.grid{
+    background-color: yellow;
+    border: 2px solid black;
+
+
 }
 
 @import 'utility';
