@@ -44,11 +44,12 @@
 // Image links act as buttons
 .img-link{
     object-fit: cover;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-
+   
     transition: transform 0.5s;
+
 
     &:hover{
         transform: scale(0.95);

@@ -24,6 +24,7 @@ img{
     height: 30rem;
     object-fit: cover;
     object-position: top;
+    max-width: 100%;
 }
 
 a {
@@ -59,10 +60,12 @@ p {
 
     .hero{
         padding-right: 1.5rem;
+        margin-right: 5rem;
     }
 
     .hero-image{
-        height: 350px;
+        height: 300px;
+        width: 300px;
     }
 
     &-content{
@@ -79,6 +82,7 @@ p {
         h1{
             font-size: 50px;
             line-height: 1.2;
+            margin-bottom: 0.25rem;
         }
     }
 }
@@ -212,9 +216,50 @@ p {
 .bio-grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
-
 }
 
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-bottom: 6rem;
+
+    .column{
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.project-title{
+    text-align: center;
+}
+
+.project-flow{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6rem;
+
+    .flow-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+
+    }
+}
+
+.thumb{
+    justify-content: center;
+    max-height: 300px;
+    transition: transform 0.5s;
+
+    &:hover{
+        transform: scale(0.95);
+    }
+}
 
 
 
