@@ -207,11 +207,13 @@ p {
     flex-direction: column;
     justify-content: left;
     align-items: left
-
- 
 }
 
+.bio-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 
+}
 
 
 
