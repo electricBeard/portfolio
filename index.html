@@ -13,6 +13,8 @@
     - Pixel observer, used to track the user's scrolling progress thru the page via: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
     - Visibility of divs via: https://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript#:~:text=To%20show%2Fhide%2C%20you%20can,which%20have%20slightly%20different%20effects%3A&text=It%20will%20automatically%20use%20the,selector%20such%20as%20%23id%20or%20.
     - Downloadable content via: https://www.w3schools.com/howto/howto_html_download_link.asp
+    - YouTube embed code via: https://www.w3schools.com/html/html_youtube.asp
+    - Image slideshow code via: https://www.w3schools.com/howto/howto_js_slideshow.asp
 -->
 
 <!DOCTYPE html>
@@ -88,16 +90,19 @@
         </div>
     </header>
 
-    <!-- Main Content begins here -->
+        <!-- Main Content begins here -->
         <div class="container projects" id="projects">
             <h2 class="project-title">Projects</h2>
 
             <!-- Guidelines to fill out asap -->
             <div class="project-grid">
                 <div class="column">
-                    <a href="#">
+                    <!-- <a href="#">
                         <img class="thumb" src="img/process1.1.png" alt="#">
-                    </a>
+                    </a> -->
+
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/-8ZPfY2IFlc" title="IAT 233 Final Project | Pavilion and Pergola Rendered with TWINMOTION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                     Pavilion
                 </div>
 
@@ -117,6 +122,7 @@
             <div class="project-flow">
 
                 <!-- Row 1 -->
+                <!-- My role -> responsibilities, improvements to be made in team interaction/execution. Give credit where it is due. -->
                 <div class="flow-row">
                     <div class="left">
                         <h4>The Problem</h4>
@@ -125,23 +131,21 @@
                         </p>
 
                         <p class="my-1">
-                            As a cerimonial space, ensuring a positive, aesthetically pleasing experience of observers and presenters was the main challenge of this project. My decision to do position the front entryway and rear patio ensures this because XYZ. 
+                            Ensuring a positive, aesthetically pleasing experience for observers and presenters was the main challenge of this project. My decision to position the front entryway and rear patio ensures in-line accomplishes this because visitors can easily view the stage, the stage is framed in light from the large rear window, and visitor movement flows can easily move in and out of the building through the front and rear exits. 
                         </p>
 
                         <h4>My Role</h4>
                         <p class="my-1">
-                            I worked with a team of 3 other designers. Together, we collaborated on the priciples of circulation, functionality, and aesthetics. I was responsible for encouraging communication, producing sketches, and 3D modelling using Rhino and Twinmotion. 
-                        </p>
-
-                        <p class="my-1">
-                            My role -> responsibilities, improvements to be made in team interaction/execution. Give credit where it is due.
+                            I worked with a team of 3 other designers. Together, we collaborated on the priciples of circulation, functionality, and aesthetics. I was responsible for encouraging communication, keeping the group on schedule, producing sketches, and 3D modelling using Rhino and Twinmotion. 
                         </p>
                     </div>
                     <div class="right">
+                        <!-- Slideshow goes here, show datum line, front/rear entries, flow -->
                         <img class="img-process" src="img/process1.1.png" alt="#">
                     </div>
                 </div>
 
+                <!-- Row 2 -->
                 <div class="flow-row">
                     <div class="left">
                         <h4>Limitations</h4>
@@ -159,36 +163,45 @@
                         </p>
                     </div>
                     <div class="right">
+                        <!-- Slideshow goes here, show reflecting pool images-->
                         <img class="img-process" src="img/process1.1.png" alt="#">
                     </div>
                 </div>
 
+                <!-- Row 3 -->
+                <!-- Show an evolution and most important processes -->
                 <div class="flow-row">
                     <div class="left">
                         <h4>Solutions</h4>
                         <p class="my-1">
-                            Show an evolution and most important processes
+                            The first main challenge was to design a datum, a form that anchors all the elements of the design. We performed a site visito to Holland Park, the purposed location of the structure ... made drawings ... etc. ... I initiated the center entrance/exit, later expanded it to include a walkway through the reflecting pool. 
                         </p>
-                        <p class="my-1">
-                            highlight a specific challenge overcome
-                        </p>
+
  
                     </div>
                     <div class="right">
+                        <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <img class="img-process" src="img/process1.1.png" alt="#">
                     </div>
                 </div>
 
+                <!-- Row 4 -->
                 <div class="flow-row">
                     <div class="left">
-     
+                        <p class="my-1">
+                            Another challenge I overcame was enabling customizable textures. Initially, the model would feature a single texture on all surfaces. To solve this, I separated every surface onto a unique layer within Rhino. Notice the image where I selected every window and moved it to the same layer, coloured blue - this allowed them all to be textured as glass later on, while retaining wood, metal, and stone textures elsewhere. 
+                        </p>
                 
                     </div>
                     <div class="right">
+                        <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <img class="img-process" src="img/process1.1.png" alt="#">
                     </div>
                 </div>
                 
+                
+                <!-- Row 5 -->
+                <!-- How did the project go? What feedback did you recieve? Metrics? What would I do differently next time? -->
                 <div class="flow-row">
                     <div class="left">
                         <h4>Lessons Learned</h4>
@@ -199,7 +212,7 @@
 
 
                         <p class="my-1">
-                            How did the project go? What feedback did you recieve? Metrics? What would I do differently next time?
+
                         </p>
                     </div>
                     <div class="right">
@@ -210,30 +223,7 @@
 
 
         <!-- Project 2 Flow here -->
-            <!-- <div class="container project-flow">
-                <h3>Project 2 NAME - draft a concise case below</h3>
-                <p class="my-1">
-                    <h4>Problem</h4>
-                    The problem -> definition, metrics, how/why it was chosen <br> Present the problem that was solved and the decisions taken to reach the solution
-                </p>
-
-                <p class="my-1">
-                    The limitations -> time, cost, scope, etc.
-                </p>
-
-                <p class="my-1">
-                    The solutions -> show an evolution and most important processes, show a specific challenge overome as well
-                </p>
-
-                <p class="my-1">
-                    My role -> responsibilities, improvements to be made in team interaction/execution. Give credit where it is due.
-                </p>
-
-                <p class="my-1">
-                    Lessons learned -> How did the project go? What feedback did you recieve? Metrics? What would I do differently next time?
-                </p>
-            </div> -->
-        </div>
+       
   
 
     <!-- Footer Content Here -->

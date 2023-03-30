@@ -35,6 +35,11 @@ p {
     max-width: 38rem;
 }
 
+h4{
+    margin-top: 2.5rem;
+
+}
+
 .showcase{
     @include set-background($primary-color);
 
