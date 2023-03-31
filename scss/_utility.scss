@@ -9,10 +9,10 @@
 
 .contact-info{
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    height: 50vh;
 }
 
 footer{
