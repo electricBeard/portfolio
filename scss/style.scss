@@ -278,7 +278,8 @@ h4{
 }
 
 // Hide the images by default
-.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5{
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, 
+.mySlides5, .mySlides6, .mySlides7, .mySlides8{
     display: none;
 }
 
@@ -291,6 +292,7 @@ h4{
     margin-top: -22px;
     padding: 16px;
     color: white;
+    font-size: 2rem;
     font-weight: bold;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
