@@ -1,9 +1,35 @@
 // This file holds media queries for variable screen sizes
 
 @media (max-width: 700px){
-    .showcase{
-        height: 400px;
 
+
+  
+
+    .showcase{
+        .logo{
+            white-space: nowrap;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero{
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
+
+            .myRole{
+                margin-top: 1rem;
+            }
+        }
+
+        .btn-stack{
+            margin-top: 4rem;
+        }
+        
         &-content{
             text-align: center;
 
@@ -30,5 +56,25 @@
     }
 
 
+    //links to the projects
+    .project-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    //actual project details
+    .project-flow{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+    
+        .flow-row{
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 2rem;
+            margin-bottom: 2rem;
+    
+        }
+    }
 
 }
