@@ -235,6 +235,11 @@ p {
     align-items: left
 }
 
+.example-nav{
+    @include set-link-properties();
+
+}
+
 .bio-grid{
     display: grid;
     grid-template-columns: 2fr 1fr;
