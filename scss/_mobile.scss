@@ -57,6 +57,11 @@
 
 
     //links to the projects
+    
+
+}
+
+@media (max-width: 800px){
     .project-grid{
         display: flex;
         flex-direction: column;
@@ -73,8 +78,18 @@
             grid-template-columns: 1fr;
             column-gap: 2rem;
             margin-bottom: 2rem;
-    
         }
     }
+
+    .bio-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+
 
 }

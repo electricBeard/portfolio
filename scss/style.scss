@@ -151,7 +151,7 @@ p {
     }
     .right{
         // background-color: lightgreen;
-        @extend .column
+        @extend .column;
     }
 
     .example-showcase{
@@ -235,6 +235,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 3rem;
     }
 }
 
@@ -253,13 +254,13 @@ p {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
         margin-bottom: 2rem;
-
     }
 }
 
 .thumb{
     justify-content: center;
     max-height: 300px;
+    max-width: 425px;
     transition: transform 0.5s;
 
     &:hover{
@@ -361,7 +362,16 @@ p {
     }
 }
 
+.video-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+iframe{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 
 @import 'utility';
