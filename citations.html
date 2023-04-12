@@ -1,0 +1,135 @@
+<!-- 
+    Greg Withers Portfolio Page
+    IAT 339 Project 03
+    Final Project
+    11 April 2023
+
+    To Do:
+    - Crop all portfolio images
+    - Script img loader to pull correct image for vp
+    - Add alt description to all images
+    - Verify all HTML, CSS, JS
+    - Add contact text-entry form
+    - Style guide forms and product pages?
+    - References page
+
+
+    References:
+    - Sass tutorial by Traversy Media on YouTube, retrieved 22 March 2023 at https://www.youtube.com/watch?v=nu5mdN2JIwM&ab_channel=TraversyMedia
+    - Earth tone color palette by Vecteezy, retrieved 22 March 2023 at https://www.vecteezy.com/vector-art/8903059-earth-tone-colour-schemes-ideas-color-palettes-are-trends-combinations-and-palette-guides-this-year-a-table-color-shades-in-rgb-or-hex-a-color-swatch-for-a-spring-fashion-home-or-interior-design
+    - Poppins & Open Sans fonts from Google Fonts.
+    - Biography and process analysis based off of previous portfolio from IAT309W Reasearch Methods for Design at SFU (pdf in root folder)
+    - Scroll watching JS from css-tricks.com, retrieved 24 March 2023 from: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
+    - Pixel observer, used to track the user's scrolling progress thru the page via: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
+    - Visibility of divs via: https://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript#:~:text=To%20show%2Fhide%2C%20you%20can,which%20have%20slightly%20different%20effects%3A&text=It%20will%20automatically%20use%20the,selector%20such%20as%20%23id%20or%20.
+    - Downloadable content via: https://www.w3schools.com/howto/howto_html_download_link.asp
+    - YouTube embed code via: https://www.w3schools.com/html/html_youtube.asp
+    - Image slideshow code via: https://www.w3schools.com/howto/howto_js_slideshow.asp
+    - Scrolling page with link via: https://copyprogramming.com/howto/make-anchor-link-go-some-pixels-above-where-it-s-linked-to
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Portfolio - GW | PM | UX</title>
+</head>
+
+<body>
+
+    <!-- Wrapper for header/hero content -->
+    <header class="showcase">
+
+        <!-- Main container class -->
+        <div class="container">
+            <nav>
+                <h1 class="logo">
+                    <a href="index.html">GW | PM | UX</a></h1>
+                <ul>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="styleguide.html">Style Guide</a></li>
+                </ul>
+            </nav>
+
+        <!-- STICKY HEADER HERE -->
+        <div id="sticky-header">
+            <div class="container">
+                <nav>
+                    <h1 class="logo">
+                        <a href="index.html">GW | PM | UX</a></h1>
+                    <ul>
+                        <li><a href="bio.html">Bio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="styleguide.html">Style Guide</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+                <!-- Tracker div for page scroll thru the hero section -->
+                <div id="pixel-to-watch"></div>
+            
+        </div>
+    </header>
+
+        <!-- References start here -->
+        <div class="container references">
+            <h1>References</h1>
+
+            <p class="my-1">
+                <ul>
+                    <li>Sass tutorial by <a href="https://www.youtube.com/watch?v=nu5mdN2JIwM&ab_channel=TraversyMedia">Traversy Media</a> on YouTube, retrieved 22 March 2023</li>
+
+                    <li>Earth tone color palette by <a href="https://www.vecteezy.com/vector-art/8903059-earth-tone-colour-schemes-ideas-color-palettes-are-trends-combinations-and-palette-guides-this-year-a-table-color-shades-in-rgb-or-hex-a-color-swatch-for-a-spring-fashion-home-or-interior-design">Vecteezy</a>, retrieved 22 March 2023</li>
+
+                    <li>Poppins & Open Sans fonts from <a href="https://fonts.google.com/">Google Fonts</a>, retrieved 20 March 2023</li>
+
+                    <li>Biography and process analysis based off of <a href="references/IAT309W Portfolio V4.pdf"> previous portfolio</a> from IAT 309W Reasearch Methods for Design at Simon Fraser University</li>
+
+                    <li>Scroll watching JS from <a href="https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/">css-tricks.com</a>, retrieved 24 March 2023</li>
+
+                    <li>Pixel observer, used to track the user's scrolling progress thru the page from <a href="https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/">css-tricks</a>, retrieved 24 March 2023</li>
+
+                    <li>Div visibility from <a href="https://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript#:~:text=To%20show%2Fhide%2C%20you%20can,which%20have%20slightly%20different%20effects%3A&text=It%20will%20automatically%20use%20the,selector%20such%20as%20%23id%20or%20">stackoverflow.com</a>, retrieved 25 March 2023</li>
+
+                    <li>Downloadable link from <a href="https://www.w3schools.com/howto/howto_html_download_link.asp">w3schools.com</a>, retrieved 24 March 2023</li>
+
+                    <li>YouTube embed code from <a href="https://www.w3schools.com/html/html_youtube.asp">w3schools.com</a>, retrieved 25 March 2023</li>
+
+                    <li>Image slideshow code from <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp">w3schools.com</a>, retrieved 26 March 2023</li>
+
+                    <li>Scrolling page with link from <a href="https://copyprogramming.com/howto/make-anchor-link-go-some-pixels-above-where-it-s-linked-to">copyprogramming.com</a>, retrieved 28 March 2023</li>
+
+                </ul>
+            </p>
+
+            
+        </div>
+
+        
+
+       
+  
+
+    <!-- Footer Content Here -->
+    <footer class="container footer">
+        <div>
+            &#169; Gregory Withers 2023 | <a href="citations.html">References</a>
+        </div>
+    </footer>
+
+<!-- JS HERE -->
+<script src="/js/observer.js"></script>
+<script src="/js/slideshow.js"></script>
+
+
+
+</body>
+</html>
