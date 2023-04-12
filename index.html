@@ -1,8 +1,8 @@
 <!-- 
-    Greg Withers Portfolio Page
+    Greg Withers Portfolio
     IAT 339 Project 03
     Final Project
-    11 April 2023
+    13 April 2023
 
     To Do:
     - Crop all portfolio images
@@ -10,22 +10,11 @@
     - Add alt description to all images
     - Verify all HTML, CSS, JS
     - Add contact text-entry form
-    - Style guide forms and product pages?
-    - References page
+    - Verify on IE, FF
+    - Verify on phone, ipad, etc.
 
-
-    References
-    - Sass tutorial by Traversy Media on YouTube, retrieved 22 March 2023 at https://www.youtube.com/watch?v=nu5mdN2JIwM&ab_channel=TraversyMedia
-    - Earth tone color palette by Vecteezy, retrieved 22 March 2023 at https://www.vecteezy.com/vector-art/8903059-earth-tone-colour-schemes-ideas-color-palettes-are-trends-combinations-and-palette-guides-this-year-a-table-color-shades-in-rgb-or-hex-a-color-swatch-for-a-spring-fashion-home-or-interior-design
-    - Poppins & Open Sans fonts from Google Fonts.
-    - Biography and process analysis based off of previous portfolio from IAT309W Reasearch Methods for Design at SFU (pdf in root folder)
-    - Scroll watching JS from css-tricks.com, retrieved 24 March 2023 from: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
-    - Pixel observer, used to track the user's scrolling progress thru the page via: https://css-tricks.com/using-intersectionobserver-to-check-if-page-scrolled-past-certain-point/
-    - Visibility of divs via: https://stackoverflow.com/questions/9456289/how-to-make-a-div-visible-and-invisible-with-javascript#:~:text=To%20show%2Fhide%2C%20you%20can,which%20have%20slightly%20different%20effects%3A&text=It%20will%20automatically%20use%20the,selector%20such%20as%20%23id%20or%20.
-    - Downloadable content via: https://www.w3schools.com/howto/howto_html_download_link.asp
-    - YouTube embed code via: https://www.w3schools.com/html/html_youtube.asp
-    - Image slideshow code via: https://www.w3schools.com/howto/howto_js_slideshow.asp
-    - Scrolling page with link via: https://copyprogramming.com/howto/make-anchor-link-go-some-pixels-above-where-it-s-linked-to
+    References link is in the footer, see citations.html
+    
 -->
 
 <!DOCTYPE html>
@@ -92,7 +81,7 @@
                     </div>
                 </div>
 
-                <img class="hero-image" src="img/GW_self_portrait.jpg">
+                <img class="hero-image" src="img/GW_self_portrait.jpg" alt="young man sitting on the floor in the sun, he is resting an arm on his knee in a relaxed way">
 
                 <!-- Tracker div for page scroll thru the hero section -->
                 <div id="pixel-to-watch"></div>
@@ -108,14 +97,14 @@
             <div class="project-grid">
                 <div class="column">
                     <a href="#project1">
-                        <img class="thumb" src="img/pavilion/pavilion_final_rear_window.png" alt="#">
+                        <img class="thumb" src="img/pavilion/pavilion_final_rear_window.png" alt="rendering of a modern pavilion building at sunset. It has large windows, a slanted roof, a rooftop garden, and water features">
                     </a>
                     Pavilion - Spatial Design
                 </div>
 
                 <div class="column">
                     <a href="#project2">
-                        <img class="thumb" src="img/polygon/polygon_thumb.png" alt="#">
+                        <img class="thumb" src="img/polygon/polygon_thumb.png" alt="poster showcasing some of the exhibits at The Polygon Gallery in North Vancouver, the building architecture is modern and stylish">
                     </a>
                     The Polygon Gallery - Interaction Desgin
                 </div>
@@ -154,15 +143,15 @@
 
                         <div class="slideshow-container">
                             <div class="mySlides1">
-                              <img src="img/pavilion/pavilion_final_day.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_final_day.png" style="width:100%" alt="rendering of a modern pavilion during the day time. A pathway through the surrounding water feature is highlighted along with its large windows and nearby vegetation">
                             </div>
                           
                             <div class="mySlides1">
-                              <img src="img/pavilion/pavilion_final_rear_window.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_final_rear_window.png" style="width:100%" alt="rendering of a modern pavilion at sunset. The rear stars, patio, and rooftop garden are highlighted">
                             </div>
                           
                             <div class="mySlides1">
-                              <img src="img/pavilion/pavilion_datum_flow.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_datum_flow.png" style="width:100%" alt="2D mockup of the pavilion visitor flow through the building. It is a square shape that allows travel around the main central room and entrace/exit from both the front and rear of the building">
                             </div>
                           
                             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -194,15 +183,15 @@
                         <!-- Slideshow goes here, show reflecting pool images-->
                         <div class="slideshow-container">
                             <div class="mySlides2">
-                              <img src="img/pavilion/pavilion_reflecting_pool.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_reflecting_pool.png" style="width:100%" alt="rendering of a modern pavilion at midday. The rear pathway through the water feature is highlighted. The surrounding vegetation and environmental features flow seamlessly into the pathway allowing for easy access from visitors.">
                             </div>
                           
                             <div class="mySlides2">
-                              <img src="img/pavilion/pavilion_reflecting_pool2.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_reflecting_pool2.png" style="width:100%" alt="rendering of a modern pavilion at midday. The rear auxiliary pathways are highlighted, which carry visitors around the water features.">
                             </div>
                           
                             <div class="mySlides2">
-                              <img src="img/pavilion/pavilion_reflecting_pool3.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_reflecting_pool3.png" style="width:100%" alt="a low angle image of the rendering of a modern pavilion, this one captures the details of water's surface and warm reflected light of the sunset.">
                             </div>
                           
                             <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -226,19 +215,19 @@
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <div class="slideshow-container">
                             <div class="mySlides3">
-                              <img src="img/pavilion/pavilion_datum_example.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_datum_example.png" style="width:100%" alt="aerial view of the pavilion rendering, highlighting the concept of a datum or anchor structure, which is the main centre pathway of the pavilion">
                             </div>
                           
                             <div class="mySlides3">
-                              <img src="img/pavilion/pavilion_site_visit1.jpeg" style="width:100%">
+                              <img src="img/pavilion/pavilion_site_visit1.jpeg" style="width:100%" alt="site visit photograph of Holland Park in Surrey BC showing the real-world location of the pavilion. A green field is shown with tall trees and apartment buildings in the distance.">
                             </div>
                           
                             <div class="mySlides3">
-                              <img src="img/pavilion/pavilion_site_visit2.jpeg" style="width:100%">
+                              <img src="img/pavilion/pavilion_site_visit2.jpeg" style="width:100%" alt="site visit photograph of Holland Park in Surrey. A green field is shown with tall trees and apartment buildings in the distance. Designers are gathered in a small group to view the location and brainstorm ideas.">
                             </div>
 
                             <div class="mySlides3">
-                                <img src="img/pavilion/pavilion_location.jpg" style="width:100%">
+                                <img src="img/pavilion/pavilion_location.jpg" style="width:100%" alt="map view of the site visit in Holland Park, it donotes two potential locations for the pavilion to be built">
                               </div>
                           
                             <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
@@ -260,24 +249,24 @@
                
                         <div class="slideshow-container">
                             <div class="mySlides4">
-                              <img src="img/pavilion/pavilion_render1.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_render1.png" style="width:100%" alt="a basic rendering of the pavilion structure, it is white and featureless">
                             </div>
                           
                             <div class="mySlides4">
-                              <img src="img/pavilion/pavilion_render2.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_render2.png" style="width:100%" alt="a more advanced rendering of the pavilion structure, it is white but features some of the modern panels and architectural components of the final design">
                             </div>
                           
                             <div class="mySlides4">
-                              <img src="img/pavilion/pavilion_render3.png" style="width:100%">
+                              <img src="img/pavilion/pavilion_render3.png" style="width:100%" alt="a wireframe model of the pavilion, its windows are highlighted in blue demonstrating how different layers were selected to alter their material appearing in later steps">
                             </div>
 
                             <div class="mySlides4">
-                                <img src="img/pavilion/pavilion_panel_arch.png" style="width:100%">
+                                <img src="img/pavilion/pavilion_panel_arch.png" style="width:100%" alt="a final rendering of the finished model, lit at dusk and showcasing the different textures of the panels, some are wood, some glass, some concrete">
                             </div>
 
                               
                             <div class="mySlides4">
-                                <img src="img/pavilion/pavilion_infill_arch.png" style="width:100%">
+                                <img src="img/pavilion/pavilion_infill_arch.png" style="width:100%" alt="a final rendering of the finished model, let at dusk and showcasing the interior details and textures. Prominently displayed is a complex chandalier, elegant stairs, patio, and ceremony location, as well as wooden chairs for the audience members.">
                             </div>
                           
                             <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
@@ -303,7 +292,7 @@
                         </p>
                     </div>
                     <div class="right">
-                        <img class="img-process" src="img/pavilion/pavilion_goat.png" alt="#">
+                        <img class="img-process" src="img/pavilion/pavilion_goat.png" alt="a final rendering of the pavilion rooftop featuring a goat. Bah!">
                     </div>
                 </div>
             </div>
@@ -346,11 +335,11 @@
                         <!-- Slideshow goes here-->
                         <div class="slideshow-container">
                             <div class="mySlides5">
-                            <img src="img/polygon/polygon_ethnography_poster2.png" style="width:100%">
+                            <img src="img/polygon/polygon_ethnography_poster2.png" style="width:100%" alt="Informational poster made to convey who the Polygon Gallery is to classmates and teaching staff. Large type highlights the polygon gallery name, with examples of their exhibits overlaid. Small text blocks highlight the gallery's focus on photography, its location in the shipyards area of north vancouver, and our key contacts in management.">
                             </div>
                                            
                             <div class="mySlides5">
-                            <img src="img/polygon/polygon_ethnography_poster1.png" style="width:100%">
+                            <img src="img/polygon/polygon_ethnography_poster1.png" style="width:100%" alt="An iteration on the information poster made to convey who the polygon is. This version features larger images which highlight the modern architecture of the building, the exhibits it holds, and the events that occur there.">
                             </div>
                         
                             <a class="prev" onclick="plusSlides(-1, 4)">&#10094;</a>
@@ -379,15 +368,15 @@
                         <!-- Slideshow goes here, show scheduling evidence-->
                         <div class="slideshow-container">
                             <div class="mySlides6">
-                            <img src="img/polygon/polygon_management01.png" style="width:100%">
+                                <img src="img/polygon/polygon_management01.png" style="width:100%" alt="screenshot of internal team messages, where I have recapped the meeting, confirmed roles, set the time for the next meeting, and left prompting questions for our next conversation">
                             </div>
                         
                             <div class="mySlides6">
-                            <img src="img/polygon/polygon_persona.png" style="width:100%">
+                              <img src="img/polygon/polygon_persona.png" style="width:100%" alt="persona poster example showcasing one of our most influential personas. It is a blue themed line drawing of the interior of the polygon gallery with an older man wearing a suit and glasses standing in the corner.">
                             </div>
                         
                             <div class="mySlides6">
-                            <img src="img/polygon/polygon_thumb.png" style="width:100%">
+                                <img src="img/polygon/polygon_thumb.png" style="width:100%" alt="polygon poster showcasing the architecture and recent exhibitions">
                             </div>
                         
                             <a class="prev" onclick="plusSlides(-1, 5)">&#10094;</a>
@@ -423,15 +412,15 @@
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <div class="slideshow-container">
                             <div class="mySlides7">
-                            <img src="img/polygon/polygon_brainstorm_storyboard.png" style="width:100%">
+                            <img src="img/polygon/polygon_brainstorm_storyboard.png" style="width:100%" alt="screenshot of the team brainstorming process using Figma, there are numerous sticky notes organized into different design focus areas, doodles, sketches, and reference imagery scattered around.">
                             </div>
                         
                             <div class="mySlides7">
-                            <img src="img/polygon/polygon_emelia_journey.png" style="width:100%">
+                            <img src="img/polygon/polygon_emelia_journey.png" style="width:100%" alt="journey framework example highlighting one of our personas time in the gallery.">
                             </div>
                         
                             <div class="mySlides7">
-                            <img src="img/polygon/polygon_final_journeymap.png" style="width:100%">
+                            <img src="img/polygon/polygon_final_journeymap.png" style="width:100%" alt="journey framework example highlighting 2 parallel concepts">
                             </div>
                         
                             <a class="prev" onclick="plusSlides(-1, 6)">&#10094;</a>
@@ -465,23 +454,23 @@
             
                         <div class="slideshow-container">
                             <div class="mySlides8">
-                            <img src="img/polygon/polygon_reframe0.png" style="width:100%">
+                                <img src="img/polygon/polygon_reframe0.png" style="width:100%" alt="screenshot of a team activity I organized to analyze our past work, each poster is laid out with sections to note where it worked, where it didn't work, and any additional thoughts">
                             </div>
                         
                             <div class="mySlides8">
-                            <img src="img/polygon/polygon_reframe0.2.png" style="width:100%">
+                              <img src="img/polygon/polygon_reframe0.2.png" style="width:100%" alt="screenshot of the team activity to reframe our design focus. This activity documented how our thinking had evolved over time, noted with sticky notes and text boxes.">
                             </div>
                         
                             <div class="mySlides8">
-                            <img src="img/polygon/polygon_reframe1.png" style="width:100%">
+                                <img src="img/polygon/polygon_reframe1.png" style="width:100%" alt="screenshot of the reframing presentation focus, where I outlined each main section of the presentation in a logical fashion (noted in the green boxes), afterwards team members added critique to refine the presentation">
                             </div>
 
                             <div class="mySlides8">
-                                <img src="img/polygon/polygon_reframe2.png" style="width:100%">
+                                <img src="img/polygon/polygon_reframe2.png" style="width:100%" alt="screenshot of the IDEO reframing technique I used to help shift our thinking about the design focus of the project. Team members contributed by voting for sections they agreed with by dropping star and thumbs-up stickers.">
                             </div> 
 
                             <div class="mySlides8">
-                                <img src="img/polygon/polygon_reframe3.png" style="width:100%">
+                                <img src="img/polygon/polygon_reframe3.png" style="width:100%" alt="screenshot of the final reframing activity where I organized the final preseentation in a logical manner - noted in the green boxes. Team members contributions are noting in the stickey notes, drawings, and comments.">
                             </div>
                         
                             <a class="prev" onclick="plusSlides(-1, 7)">&#10094;</a>
