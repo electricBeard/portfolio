@@ -175,6 +175,11 @@ p {
         display: flex;
         flex-direction: column;
         height: 40%;
+        
+        .logo{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
 
    
         nav{
