@@ -405,6 +405,12 @@ iframe{
     height: 100%;
 }
 
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    width: 75%
+}
+
 
 @import 'utility';
 @import 'buttons';

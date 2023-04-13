@@ -54,14 +54,16 @@
         display: grid;
         grid-template-columns: 1fr;
     }    
+
+    .social-links{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+    }
 }
 
 @media (max-width: 800px){
-    .project-grid{
-        display: flex;
-        flex-direction: column;
-    }
-
     //actual project details
     .project-flow{
         display: flex;
@@ -84,7 +86,11 @@
     .hero-image{
         display: none;
     }
+}
 
-
-
+@media (max-width: 950px){
+    .project-grid{
+        display: flex;
+        flex-direction: column;
+    }
 }

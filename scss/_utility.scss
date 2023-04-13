@@ -5,15 +5,26 @@
     padding: 0 30px;
     margin: 0 auto;
     overflow: auto;
+
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.contact-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 50vh;
+textarea{
+    width: 100%;
+    padding: 20px 20px;
 }
+
+.text-entry{
+    width: 75%;
+    margin-top: 1rem;
+    margin-bottom: 15rem;
+    }
+
 
 footer{
     text-align: center;
