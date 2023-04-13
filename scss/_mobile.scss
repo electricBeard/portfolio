@@ -1,10 +1,16 @@
 // This file holds media queries for variable screen sizes
+@media (max-width: 500px){
+    .thumb{
+        max-width: 100%;
+
+    }
+}
+
+
+
+
 
 @media (max-width: 700px){
-
-
-  
-
     .showcase{
         .logo{
             white-space: nowrap;

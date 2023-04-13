@@ -37,16 +37,17 @@
     align-items: start;
 }
 
-// submit and reset buttons here
-
+.button-box{
+    max-width: 75%;
+}
 
 
 // Image links act as buttons
 .img-link{
     object-fit: cover;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+    // border-radius: 50%;
    
     transition: transform 0.5s;
 
@@ -56,9 +57,4 @@
     }
 }
 
-.image-link-box{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
 
