@@ -28,10 +28,14 @@ img{
 }
 
 a {
-    background: linear-gradient($c-palette1 0 0)
-        bottom left/
-        var(--underline-width, 0%) 0.1em
-        no-repeat;
+
+    // This background function reports as an error with W3C CSS Validation Service, 
+    // however I found a post saying this is due to some sort of error in the validator
+    // itself due to the use of variables and it is slated to be updated.
+    // Reference: https://github.com/tailwindlabs/tailwindcss/issues/5349
+
+    background: linear-gradient($c-palette1 0 0) bottom left/ var(--underline-width, 0%) 0.1em no-repeat;
+
     color: $c-palette1;
     text-decoration: none;
     transition: background-size 0.5s;
@@ -202,14 +206,14 @@ p {
             @include set-link-properties();
             display: flex;
             flex-direction: column;
-            align-items: left;
+            align-items: start;
             justify-content: space-between;
 
     
             ul{
                 display: flex;
                 flex-direction: column;
-                align-items: left;
+                align-items: start;
                 list-style: none;
             }
     
@@ -224,7 +228,7 @@ p {
 .font-box{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     justify-self: flex-start;
 }
 
@@ -253,12 +257,30 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left
+    align-items: start;
 }
 
 .example-nav{
     @include set-link-properties();
+    &:hover{
+        --underline-width: 0;
+    }
+}
 
+.example-h1{
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.example-logo{
+    font-family: $font-stack;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
 }
 
 .bio-grid{
