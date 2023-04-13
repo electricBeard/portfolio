@@ -12,6 +12,7 @@
     &:hover{
         transform: scale(0.95);
         cursor: pointer;
+       --underline-width: 0;
     }
 }
 
@@ -54,7 +55,10 @@
 
     &:hover{
         transform: scale(0.95);
+        --underline-width: 0;
+
     }
+
 }
 
 

@@ -28,8 +28,17 @@ img{
 }
 
 a {
-    text-decoration: none;
+    background: linear-gradient($c-palette1 0 0)
+        bottom left/
+        var(--underline-width, 0%) 0.1em
+        no-repeat;
     color: $c-palette1;
+    text-decoration: none;
+    transition: background-size 0.5s;
+
+    &:hover{
+        --underline-width: 100%;
+    }
 }
        
 p {
@@ -45,6 +54,9 @@ p {
 #project1{
     padding-top: 100px;
     margin-top: -100px;
+    a:hover{
+        --underline-width: 0;
+    }
 }
 #project2{
     padding-top: 100px;
@@ -66,6 +78,10 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        a:hover{
+            --underline-width: 0;
+        }
 
         ul{
             display: flex;
@@ -101,19 +117,10 @@ p {
         align-items: center;
         justify-content: center;
         padding-bottom: 7rem;
-        // margin-top: 5rem;
 
         img{
             width: 50%;
         }
-
-        // h1{
-        //     font-size: 50px;
-        //     line-height: 1.2;
-        //     margin-bottom: 0.25rem;
-        // }
-
-
     }
 }
 
@@ -302,14 +309,19 @@ p {
 
 .thumb{
     justify-content: center;
-    // max-height: 250px;
     max-width: 450px;
     transition: transform 0.5s;
 
     &:hover{
         transform: scale(0.95);
+        --underline-width: 0;
     }
 }
+
+.thumb-link:hover{
+    --underline-width: 0;
+}
+    
 
 
 // Slideshow stuff here
@@ -352,6 +364,7 @@ p {
 .prev:hover, .next:hover{
     background-color: #f1f1f1;
     color: black;
+    --underline-width: 0;
 }
 
 // caption text
