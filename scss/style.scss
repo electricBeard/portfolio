@@ -1,10 +1,6 @@
-//  Main SASS Stylesheet
-
-//is compiled and minified to regular css
-
+//  Main SASS Stylesheet, compiled & minified to regular css in css/style.css
 
 @import 'config';
-
 
 *{
     box-sizing: border-box;
@@ -28,7 +24,6 @@ img{
 }
 
 a {
-
     // This background function reports as an error with W3C CSS Validation Service, 
     // however I found a post saying this is due to some sort of error in the validator
     // itself due to the use of variables and it is slated to be updated. Please ignore.
@@ -65,14 +60,9 @@ p {
     margin-top: -100px;  
 }
 
-
-
-
+//main page header area.
 .showcase{
     @include set-background($primary-color);
-
-    // max-height: 1600px;
-
     margin-bottom: 6rem;
 
     nav{
@@ -126,6 +116,7 @@ p {
     }
 }
 
+//floating header that follows scroll
 #sticky-header{
     position: fixed;
     top: 0;
@@ -177,15 +168,12 @@ p {
     }
 
     .left{
-        // background-color: lightblue;
-        @extend .column
+        @extend .column;
     }
     .middle{
-        // background-color: lightcoral;
         @extend .column;
     }
     .right{
-        // background-color: lightgreen;
         @extend .column;
     }
 
@@ -201,7 +189,6 @@ p {
             margin-bottom: 1rem;
         }
 
-   
         nav{
             @include set-link-properties();
             display: flex;
@@ -209,7 +196,6 @@ p {
             align-items: start;
             justify-content: space-between;
 
-    
             ul{
                 display: flex;
                 flex-direction: column;
@@ -344,7 +330,7 @@ p {
     
 
 
-// Slideshow stuff here
+// Image slideshow stuff here
 
 .slideshow-container{
     max-width: 1000px;
@@ -399,31 +385,31 @@ p {
 
 
 
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
+// .dot{
+//     cursor: pointer;
+//     height: 15px;
+//     width: 15px;
+//     margin: 0 2px;
+//     background-color: #bbb;
+//     border-radius: 50%;
+//     display: inline-block;
+//     transition: background-color 0.6s ease;
+// }
 
-.active, .dot:hover{
-    background-color: #717171;
-}
+// .active, .dot:hover{
+//     background-color: #717171;
+// }
 
 // Fading animation
-.fade{
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+// .fade{
+//     animation-name: fade;
+//     animation-duration: 1.5s;
+// }
 
-@keyframes fade{
-    from{opacity: 0.4}
-    to{opacity: 1;}
-}
+// @keyframes fade{
+//     from{opacity: 0.4}
+//     to{opacity: 1;}
+// }
 
 
 .bio-box{
@@ -434,6 +420,8 @@ p {
     }
 }
 
+
+// YouTube embed stuff here
 .video-box{
     display: flex;
     flex-direction: column;
