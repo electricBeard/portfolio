@@ -1,23 +1,22 @@
 <!-- 
-    Greg Withers Portfolio
+    Final Portfolio
     IAT 339 Project 03
-    Final Project
+    Gregory Withers 301382375
     13 April 2023
+    Professor Peter Loo
+    Assistant Kimia Aghaei
 
     To Do:
-    - Verify on IE, FF
-    - modal not working on other browsers
-    - header does not hide on other browsers
-    - image carosels doe not work on browser
     - Clean-up & comment code
 
     References, Style Guide, and Github Repo links are in the footer.
     
     Validation Note:
-    The background CSS function used to create an underline on in-text links reports as an error with W3C CSS Validation Service, however I found a post saying this is due to some sort of error in the validator itself due to the use of variables. It is slated to be updated. Please ignore that error message. All other errors have been rectified.
+    The background CSS function used to create an underline animation on in-text links reports as an error with W3C CSS Validation Service, however I found a post saying this is due to some sort of error in the validator itself due to the use of variables. It is slated to be updated. Please ignore that error message. All other errors have been rectified. 
 
     Please see this link for more details if needed: https://github.com/tailwindlabs/tailwindcss/issues/5349
-    
+
+    Site has also been tested on Firefox and Edge and functions as intended. 
 -->
 
 <!DOCTYPE html>
@@ -49,20 +48,20 @@
                 </ul>
             </nav>
 
-        <!-- STICKY HEADER HERE -->
-        <div id="sticky-header">
-            <div class="container">
-                <nav>
-                    <div class="logo">
-                        <a href="index.html">GW | PM | UX</a></div>
-                    <ul>
-                        <li><a href="bio.html">Bio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="index.html#projects">Projects</a></li>
-                    </ul>
-                </nav>
+            <!-- STICKY HEADER HERE -->
+            <div id="sticky-header">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <a href="index.html">GW | PM | UX</a></div>
+                        <ul>
+                            <li><a href="bio.html">Bio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html#projects">Projects</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
 
             <!-- Hero Content HERE -->
             <div class="showcase-content">
@@ -71,10 +70,12 @@
                     <h2 class="myRole"> Project Manager</h2>
                     <h2 class="myRole">User Experience Designer</h2>
 
+                    <!-- Tagline, something short and catchy -->
                     <p class="my-1">
                         Hi there! I'm Greg. I solve problems using design thinking. 
                     </p>
 
+                    <!-- Quick action buttons here -->
                     <div class="btn-stack">
                         <a href="contact.html" class="btn-primary">Contact</a>
                         <a href="#projects" class="btn-secondary">Projects</a>
@@ -82,6 +83,7 @@
                     </div>
                 </div>
 
+                <!-- Profile picture here -->
                 <img class="hero-image" src="img/greg/GW_self_portrait.jpg" alt="young man sitting on the floor in the sun, he is resting an arm on his knee in a relaxed way">
 
                 <!-- Tracker div for page scroll thru the hero section -->
@@ -91,11 +93,14 @@
         </div>
     </header>
 
-        <!-- Main Content begins here -->
+        <!-- Main project links here -->
         <div class="container projects" id="projects">
             <h2 class="project-title">Projects</h2>
 
+            <!-- thumbnail container -->
             <div class="project-grid">
+
+                <!-- Project 1 -->
                 <div class="column">
                     <a class="thumb-link" href="#project1">
                         <img class="thumb" src="img/pavilion/pavilion_final_rear_window.png" alt="rendering of a modern pavilion building at sunset. It has large windows, a slanted roof, a rooftop garden, and water features">
@@ -103,6 +108,7 @@
                     Pavilion - Spatial Design
                 </div>
 
+                <!-- Project 2 -->
                 <div class="column">
                     <a class="thumb-link" href="#project2">
                         <img class="thumb" src="img/polygon/cropped/polygon_final_ticket_station.png" alt="poster showcasing some of the exhibits at The Polygon Gallery in North Vancouver, the building architecture is modern and stylish">
@@ -140,7 +146,8 @@
                             I worked with a team of 3 other designers. Together, we collaborated on the priciples of circulation, functionality, and aesthetics. I was responsible for encouraging communication, maintaining the group schedule, producing sketches, and 3D modelling using Rhino and Twinmotion. 
                         </p>
                     </div>
-
+                    
+                    <!-- Slideshow goes here, show datum line, front/rear entries, flow -->                  
                     <div class="right">
                         <div class="slideshow-container">
                             <div class="mySlides1">
@@ -158,8 +165,6 @@
                             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                           </div>
-
-                        <!-- Slideshow goes here, show datum line, front/rear entries, flow -->                  
                     </div>
                 </div>
 
@@ -181,6 +186,7 @@
                             Excellent planning and use of resources allowed for extra time to be spent developing a reflecting pool and environmental details around the Pavilion. These added details garnered praise from the teaching team and peers. 
                         </p>
                     </div>
+
                     <div class="right">
                         <!-- Slideshow goes here, show reflecting pool images-->
                         <div class="slideshow-container">
@@ -219,9 +225,8 @@
                         <p class="my-1">
                             I initiated the center entrance/exit to accomodate the surrounding landscape and existing park pathways. Later, this was expanded it to include a walkway through the reflecting pool. 
                         </p>
-
- 
                     </div>
+                    
                     <div class="right">
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <div class="slideshow-container">
@@ -259,6 +264,7 @@
                         </p>
                 
                     </div>
+
                     <div class="right">
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                
@@ -352,7 +358,6 @@
                     </div>
                     <div class="right">
                         
-                        
                         <!-- Slideshow goes here-->
                         <div class="slideshow-container">
                             <div class="mySlides5">
@@ -383,8 +388,8 @@
                         <p class="my-1">
                             Time remained a constant limitation throughout the project, however my decision to limit the length of meetings helped to focus group activities on the design topics at hand. Consistent bi-weekly meeting scheduling also contributed to an efficient process through the course objectives and production of course deliverables. The busy end-of-term push to finish projects accross many classes compounded this constraint.
                         </p>
-                      
                     </div>
+
                     <div class="right">
                         <!-- Slideshow goes here, show scheduling evidence-->
                         <div class="slideshow-container">
@@ -427,9 +432,8 @@
                         <p class="my-1">
                             Several boundaries/ground rules were established: Meetings were not to exceed 2 hours, helping us focus on the immediate tasks at hand. Design decisions would be decided by popular vote, and solid definitions of team member roles were established. 
                         </p>
-            
-
                     </div>
+
                     <div class="right">
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
                         <div class="slideshow-container">
@@ -469,8 +473,8 @@
                         <p class="my-1">
                             Using an IDEO technique, I led the group to hone our focus area by reframing our process around the front entryway and the competing constraints it embodies.
                         </p>
-                
                     </div>
+
                     <div class="right">
                         <!-- Slideshow goes here, show planning images, drawings, to model, to, render etc.-->
             
@@ -500,7 +504,6 @@
                         </div>
                     </div>
                 </div>
-                
                 
                 <!-- Row 5 -->
                 <!-- How did the project go? What feedback did you recieve? Metrics? What would I do differently next time? -->
@@ -535,9 +538,6 @@
             </div>
         </div>
 
-       
-  
-
     <!-- Footer Content Here -->
     <footer class="container footer">
         <div>
@@ -548,8 +548,6 @@
 <!-- JS HERE -->
 <script src="js/observer.js"></script>
 <script src="js/slideshow.js"></script>
-
-
 
 </body>
 </html>
