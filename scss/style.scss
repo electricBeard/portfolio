@@ -444,8 +444,10 @@ iframe{
 
 .social-links{
     display: flex;
-    justify-content: space-between;
-    width: 75%
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
 }
 
 

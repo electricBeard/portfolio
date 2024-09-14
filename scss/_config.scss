@@ -6,11 +6,11 @@
 $font-stack:        Poppins, Open Sans, Helvetica, Arial, sans-serif;
 
 // Color Palette
-$c-palette1: #70823E;
+$c-palette1: #416B38;
 $c-palette2: #DFCF99;
 $c-palette3: #E0B44A;
 $c-palette4: #D8853F;
-$c-palette5: #F3EAD8;
+$c-palette5: #F1F0EC;
 $c-palette6: #866C5A;
 
 // Main Colors
@@ -22,7 +22,7 @@ $tertiary-color:    $c-palette3;
 // Set text color based on background
 @function set-text-color($color){
     @if(lightness($color) > 70) {
-        @return #333;
+        @return #262421;
     } @else {
         @return white;
     }
