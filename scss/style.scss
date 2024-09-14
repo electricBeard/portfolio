@@ -94,6 +94,7 @@ p {
     }
 
     .hero{
+    
         padding-right: 1.5rem;
         margin-right: 5rem;
     }
@@ -102,6 +103,12 @@ p {
         height: 300px;
         width: 300px;
     }
+
+    .myName{ 
+        font-size: 3.6rem;
+        margin-left: -2px;
+    }
+
 
     &-content{
         height: 100vh;
